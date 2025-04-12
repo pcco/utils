@@ -1,0 +1,6 @@
+# generated files
+*.png
+
+# python venv
+*env
+
