@@ -4,3 +4,7 @@
 # python venv
 *env
 
+# docker
+docker/centos7-builder/*
+!docker/centos7-builder/Dockerfile
+!docker/centos7-builder/*.repo
