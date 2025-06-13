@@ -1,8 +1,13 @@
 # generated files
 *.png
+*.csv
+
+# input tmp files
+sermon-data.txt
 
 # python venv
 *env
+pyrightconfig.json
 
 # docker
 docker/centos7-builder/*
