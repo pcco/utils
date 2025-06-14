@@ -1,7 +1,6 @@
 """Utility to generate sermon csv by ingesting raw text data from sermon browser
 wordpress database
 """
-
 from csv import QUOTE_MINIMAL, writer
 import re
 from phpserialize import loads
@@ -17,7 +16,6 @@ def gen_html_audio_element_str(data_item):
             'type="audio/mpeg">Your browser does not support the audio element.'
             "</audio>"
         )
-    print(result)
     return result
 
 
@@ -87,16 +85,13 @@ def generate_csv(out_csv, data):
                     audio_html_element,
                 ]
             )
-            print(audio_html_element)
-        # Write data loop
-        # csv_writer.writerow(['2025-04-20', 'Pastor Jesse McLaughlin', 'Worship the Risen Jesus', 'Matthew 28:1–15', '<audio controls><source src=\"https://pccoakland.org/oif/wp-content/uploads/sermons/2025-04-20 - OIF Sermon - Jesse McLaughlin.mp3\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio>' ])
 
 
 def main():
+    # TODO: parameterize the input data file and csv output file
     data = read_raw_sermon_data("./sermon-data.txt")
     generate_csv("output.csv", data)
 
 
 if __name__ == "__main__":
     main()
-    # print(loads(data=b'a:1:{i:0;a:3:{s:4:"book";s:7:"1 Peter";s:7:"chapter";i:4;s:5:"verse";i:1;}}', decode_strings=True))

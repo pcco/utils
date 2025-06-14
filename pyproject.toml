@@ -1,0 +1,20 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools"]
+
+[project]
+name = "pcco-utils"
+version = "0.1"
+dependencies = [
+  'qrcode[pil]',
+  'phpserialize'
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pcco"]
+
+[project.scripts]
+pcco-gen-qr = "pcco.qr.gen:main"
+pcco-gen-sermon-csv = "pcco.sermon.gen_csv:main"
+

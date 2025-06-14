@@ -8,6 +8,8 @@ sermon-data.txt
 # python venv
 *env
 pyrightconfig.json
+*.egg-info
+__pycache__
 
 # docker
 docker/centos7-builder/*
