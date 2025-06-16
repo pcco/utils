@@ -1,6 +1,7 @@
 """Utility to generate sermon csv by ingesting raw text data from sermon browser
 wordpress database
 """
+
 from csv import QUOTE_MINIMAL, writer
 import re
 from phpserialize import loads
