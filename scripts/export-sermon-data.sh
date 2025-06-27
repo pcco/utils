@@ -1,4 +1,7 @@
 #!/bin/bash
+# This script is meant to be executed within a wordpress host where mysql is installed.
+# This script must also be executed in the same directory as `wp-config.php` in order to extract
+# the DB credentials.
 
 extract_php_var(){
   sed -n "s/define('$1', '\([^']*\)');/\1/p" wp-config.php
