@@ -14,7 +14,7 @@ The wordpress host on hostigator is a centos7 based machine. This image is used 
 
 Once the image is built, you can create a running container with this command:
 
-```
+```shell
 docker run -it -v $(pwd):/work centos7-builder:latest bash
 ```
 
