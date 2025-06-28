@@ -4,16 +4,18 @@ Utility scripts for PCCO ministry work
 
 ## Project Structure
 
-root
-├── docker
-├── pcco
-└── scripts
+```
+root  
+├── docker  
+├── pcco  
+└── scripts  
+```
 
 ### docker
 
 Contains dockerfiles to build custom docker images
 
-See [docker/README.md] for more details
+See [docker/README.md](./docker/README.md) for more details
 
 ### pcco
 
