@@ -10,7 +10,7 @@ in that column.
 
 ## centos7-builder
 
-The wordpress host on hostigator is a centos7 based machine. This image is used to replicate that as a build environment.
+The WordPress host on Hostigator is a centos7 based machine. This image is used to replicate that as a build environment.
 
 Once the image is built, you can create a running container with this command:
 
@@ -22,4 +22,4 @@ The current working folder path is bind-mounted to `/work` inside the container,
 Use `curl`, `wget`, or `git` to obtain the source you want to compile. Follow the instructions of those sources to build/compile.
 Keep in mind that the container runs as `root`, so any file generated will also be owned as root on your host.
 
-Any generated files can be transferred over to the wordpress host via scp.
+Any generated files can be transferred over to the WordPress host via scp.
