@@ -4,9 +4,9 @@ The general convention is each sub directory contains dockerfiles for the specif
 The `Build Command Example` assumes the current working directory is in the `Directory` specified
 in that column.
 
-| Directory                           | Build Command Example                                                         | Purpose                                                              |
-| ----------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| [centos7-builder](#centos7-builder) | <pre><code lang="shell">docker build -t centos7-builder:latest .</code></pre> | Build container to transfer executables to hostigator wordpress host |
+| Directory                           | Build Command Example                                                         | Purpose                                                                |
+| ----------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [centos7-builder](#centos7-builder) | <pre><code lang="shell">docker build -t centos7-builder:latest .</code></pre> | Build container to build executables for the hostigator wordpress host |
 
 ## centos7-builder
 
