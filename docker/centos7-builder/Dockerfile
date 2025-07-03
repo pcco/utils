@@ -21,4 +21,7 @@ RUN yum groupinstall -y "Development Tools" && \
 # Clean and make yum cache
 RUN yum clean all && yum makecache
 
+RUN mkdir /work
+WORKDIR /work
+
 CMD ["/bin/bash"]
