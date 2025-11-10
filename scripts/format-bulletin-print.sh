@@ -11,12 +11,12 @@
 [[ ! -f "${1}" ]] && echo "[ERROR]: ${1} doesn't exist" && exit 1
 source_pdf_statement="${1}"
 
-# The scale is set to 0.99 to make sure the content fits within the
+# The scale is set to 0.97 to make sure the content fits within the
 # printable margins
 pdfjam "${source_pdf_statement}" '1,1' \
   "${source_pdf_statement}" '2,2' \
   --paper letterpaper,landscape \
-  --scale 0.99 \
+  --scale 0.97 \
   --offset '0cm 0cm' \
   --clip false \
   --nup 2x1 \
