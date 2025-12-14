@@ -16,7 +16,7 @@ source_pdf_statement="${1}"
 pdfjam "${source_pdf_statement}" '1,1' \
   "${source_pdf_statement}" '2,2' \
   --paper letterpaper,landscape \
-  --scale 0.97 \
+  --scale 0.96 \
   --offset '0cm 0cm' \
   --clip false \
   --nup 2x1 \
